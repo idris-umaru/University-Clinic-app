@@ -1,0 +1,81 @@
+/* Base Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Container */
+.login-container {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+/* Labels & Inputs */
+.login-container label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #333;
+}
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.login-container button:hover {
+  background-color: #00bcd4;
+}
+
+/* Text Links */
+.text-links {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+.text-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.text-links a:hover {
+  text-decoration: underline;
+}

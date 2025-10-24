@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment - Campus Health</title>
+    <link rel="stylesheet" href="css/appointment.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Book an Appointment</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="chatbot.html">AI Chatbot</a></li>
+          <li><a href="complaint.html">Complaints</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="form-container">
+      <form id="appointmentForm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required />
+
+        <label for="doctor">Choose Doctor:</label>
+        <select id="doctor" required>
+          <option value="">-- Select --</option>
+          <option value="Dr. Bello">Dr. Bello</option>
+          <option value="Dr. Maryam">Dr. Maryam</option>
+          <option value="Dr. James">Dr. James</option>
+        </select>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+
+      <p id="statusMessage" class="status" aria-live="polite"></p>
+    </main>
+
+    <!-- Firebase + Appointment Script -->
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/appointment.js"></script>
+  </body>
+</html>

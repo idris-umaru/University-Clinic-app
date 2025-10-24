@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Campus Health</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2 class="logo">Campus Health</h2>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="appointment.html">Appointments</a></li>
+            <li><a href="chatbot.html">AI Chatbot</a></li>
+            <li><a href="complaint.html">Complaints</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+          </ul>
+        </nav>
+        <div class="user-info">
+          <p id="userName">Loading...</p>
+          <p id="userEmail"></p>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="main-header">
+          <h1 id="welcomeMessage">Welcome back, User 👋</h1>
+          <p>Here’s your Campus Health Dashboard overview.</p>
+        </header>
+
+        <!-- Stats Cards -->
+        <section class="card-grid">
+          <div class="card">
+            <p class="card-title">Total Appointments</p>
+            <h2 id="appointmentCount" class="card-value">0</h2>
+            <p class="card-subtext">All your bookings</p>
+          </div>
+          <div class="card">
+            <p class="card-title">Available Doctors</p>
+            <h2 class="card-value">10</h2>
+            <button class="card-button">View</button>
+          </div>
+          <div class="card">
+            <p class="card-title">Pending Complaints</p>
+            <h2 class="card-value">4</h2>
+            <p class="card-subtext warning">Action needed</p>
+          </div>
+        </section>
+
+        <!-- Appointment List -->
+        <section class="appointments-section">
+          <h2>Your Appointments</h2>
+          <div id="appointmentsList" class="appointments-list">
+            <p>Loading your appointments...</p>
+          </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="actions">
+          <a id="bookBtn" class="action-btn" href="appointment.html">Book New Appointment</a>
+          <a id="reportBtn" class="action-btn" href="complaint.html">Generate Complaints</a>
+        </section>
+
+        <!-- Alert -->
+        <div class="alert">⚠ check for unresolved complaints.</div>
+      </main>
+    </div>
+
+    <!-- Firebase and Dashboard Script -->
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+  </body>
+</html>

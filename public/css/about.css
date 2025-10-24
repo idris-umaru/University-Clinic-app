@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f9fafe;
+  color: #333;
+}
+
+.header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.about-section h2 {
+  color: #004080;
+  margin-top: 1.5rem;
+}
+
+.about-section ul {
+  list-style: square inside;
+  margin-left: 1rem;
+}
+
+.footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

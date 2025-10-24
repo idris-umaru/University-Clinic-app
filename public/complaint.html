@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Complaint - Campus Health</title>
+  <link rel="stylesheet" href="css/complaint.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Campus Health - Complaint Center</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="appointment.html">Book Appointment</a></li>
+        <li><a href="chatbot.html">AI Chatbot</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Submit a Complaint</h2>
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="Your Full Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="complaintText" placeholder="Describe your issue..." rows="6" required></textarea>
+      <button type="submit">Submit Complaint</button>
+    </form>
+    <p id="responseMsg"></p>
+  </main>
+
+  <script src="js/complaint.js"></script>
+</body>
+</html>

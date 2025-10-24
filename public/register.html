@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Campus Health</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="register-container">
+      <div class="register-header">
+        <h1>Create Account</h1>
+        <p>Join Campus Health and manage your appointments easily</p>
+      </div>
+
+      <h2>Create Your Account</h2>
+      <form id="registerForm">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="Enter your first name" required />
+
+        <label for="middleName">Middle Name (optional)</label>
+        <input type="text" id="middleName" placeholder="Enter your middle name" />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" placeholder="Enter your last name" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
+
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Please enter your password" required />
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Please re-enter your password" required />
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/register.js"></script>
+  </body>
+</html>

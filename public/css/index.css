@@ -1,0 +1,114 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #e8ecef;
+  color: #1a1a1a;
+}
+
+/* Container Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a2e;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00bcd4;
+}
+
+/* Section Base */
+.section {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  background: linear-gradient(to bottom right, #f1f5f9, #ffffff);
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Style */
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-align: center;
+}
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+.card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
