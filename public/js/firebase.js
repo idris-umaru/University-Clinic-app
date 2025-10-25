@@ -6,7 +6,7 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/12.4.0/firebase
 import { getStorage } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-storage.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDnhdFq9tt-56c4rcfQec8qxwbtL5B_-KM",
+  apiKey: ",
   authDomain: "campus-app-with-intelligentbot.firebaseapp.com",
   projectId: "campus-app-with-intelligentbot",
   storageBucket: "campus-app-with-intelligentbot.firebasestorage.app",
